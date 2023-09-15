@@ -1,0 +1,179 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Intro */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* keyboard */
+
+.keyboard {
+    border: 1px solid slategrey;
+    padding: 5px;
+    border-radius: 4px;
+    position: relative;
+    width: 827px;
+}
+
+.link:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.key {
+    float: left;
+    width: 49px;
+    height: 53px;
+    border: 1px solid slategrey;
+    border-radius: 4px;
+    margin: 3px;
+    padding: 9px;
+    text-align: center;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+.backspace {
+    width: 94px;
+}
+
+.tab {
+    width: 72px;
+}
+
+.caps_lock {
+    width: 90px;
+}
+
+.lshift {
+    width: 105px;
+}
+
+.rshift {
+    width: 148px;
+}
+
+.ctrl {
+    width: 61px;
+}
+
+.alt {
+    width: 61px;
+}
+
+.space {
+    width: 340px;
+}
+
+.window {
+    width: 61px;
+}
+
+.window .icon {
+    padding-top: 5px;
+}
+
+.letter-key {
+    text-transform: none;
+}
+
+.enter {
+    position: absolute;
+    right: 4px;
+    top: 64px;
+    width: 54px;
+    height: 112px;
+}
+
+.red-button {
+    background-color: #a00;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    padding-top: 30px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000
+    ;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000000;
+}
+
+/* Nav */
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+
+    color: #000;
+    text-decoration: none;
+
+    transition: color .1s linear;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #fce38a;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.nav__link:hover {
+    color: #fce38a;
+}
+
+.nav__link:hover::after {
+    opacity: 1;
+}
+
